@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" type="text/css" />
+    <link rel="stylesheet" href="/static/magicCardStyle.css" type="text/css" />
+    <link rel="stylesheet" href="/static/inputFormStyle.css" type="text/css" />
+    <script src="/static/d3.v7.min.js"></script>
+    <script src="/static/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="magicCard" id="magicCard-1" style="--card-width: 350px; --card-height: 300px">
+            Magic Card
+        </div>
+
+        <div class="card" style="--clr: #009688">
+            <div class="img-box">
+                <img src="https://i.postimg.cc/t4w95jsf/img-01.png">
+            </div>
+            <div class="content">
+                <h2>最近有开心的事情吗？</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Architecto, hic? Magnam eum error saepe doloribus corrupti
+                    repellat quisquam alias doloremque!
+                </p>
+                <a href="">Read More</a>
+            </div>
+        </div>
+        <div class="card" style="--clr: #FF3E7F">
+            <div class="img-box">
+                <img src="https://i.postimg.cc/pdjRc68d/img-02.png">
+            </div>
+            <div class="content">
+                <h2>有不开心的事情吗？</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Architecto, hic? Magnam eum error saepe doloribus corrupti
+                    repellat quisquam alias doloremque!
+                </p>
+                <a href="">Read More</a>
+            </div>
+        </div>
+        <div class="card" style="--clr: #03A9F4">
+            <div class="img-box">
+                <img src="https://i.postimg.cc/26fms7F7/img-03.png">
+            </div>
+            <div class="content">
+                <h2>说出来吧，让我们夸夸你！</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Architecto, hic? Magnam eum error saepe doloribus corrupti
+                    repellat quisquam alias doloremque!
+                </p>
+                <a href="">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="form__group field">
+        <input type="input" class="form__field" style="--font-color: #fff" placeholder="夸人就是夸自己" name="夸人就是夸自己"
+            id='kindWordInput' required />
+        <label for="夸人就是夸自己" class="form__label">夸人就是夸自己</label>
+    </div>
+
+    <div class="container" id="container-1">
+    </div>
+
+    <script>
+        refreshTopics();
+        handleInput();
+    </script>
+</body>
+
+</html>
